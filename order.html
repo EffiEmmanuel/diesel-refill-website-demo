@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/d112d4eec8.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Diesel Refill | Order</title>
+</head>
+<body>
+    <nav class="container ">
+        <div class="left">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <span><i class="fa-solid fa-phone phone-icon"></i> 0912-200-2000</span>
+        </div>
+
+        <div class="right">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="#" class="current-page">ORDER</a></li>
+                <li><a href="about-us">ABOUT US</a></li>
+                <li><a href="mission-and-vision">MISSION & VISION STATEMENT</a></li>
+                <li><a href="contact-us">CONTACT US</a></li>
+            </ul>
+        </div>
+    
+    </nav>
+
+    <div class="bg-green diesel-price">
+        <p><b>Today's Diesel Price:</b> Call 0912-200-2000</p>
+    </div>
+
+
+    <main id="main">
+        <h3 class="">ORDER REQUEST FORM</h3>
+
+        <form action="" method="post" class="order-form">
+
+            <p>
+                <span>Product</span>
+                <select name="product">
+                    <option value=""></option>
+                </select>
+            </p>
+
+            <p>
+                <span>Priority</span>
+                <select name="priority">
+                    <option value=""></option>
+                </select>
+            </p>
+
+            <p>
+                <span>Quantity <br>
+                    <span>(Litres for Diesel and Engine Oil, KG for Cooking Gas)</span>
+                </span>
+                <input type="number" name="quantity">
+            </p>
+
+            <p>
+                <span>Location</span>
+                <input type="text" name="location">
+            </p>
+
+            <p>
+                <span>Contact Person</span>
+                <input type="text" name="contactPerson">
+            </p>
+
+            <p>
+                <span>Contact Phone</span>
+                <input type="tel" name="contactPhone">
+            </p>
+
+            <p>
+                <span>Contact Email</span>
+                <input type="email" name="contactEmail">
+            </p>
+
+            <p>
+                <span>Payment Mode</span>
+                <select name="payment">
+                    <option value=""></option>
+                </select>
+            </p>
+
+            <p>
+                <span>Description</span>
+                <textarea name="description" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <span class="button-span"></span>
+                <input type="submit" class="bg-green" value="SUBMIT">
+            </p>
+        </form>
+    </main>
+
+    <footer class="bg-green">
+
+        &copy; 2022 DIESEL REFILL. ALL RIGHTS RESERVED
+
+    </footer>
+</body>
+</html>

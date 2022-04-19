@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    line-height: 1.5;
+    background: #f1f1f1;
+    height: 100vh;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #125C50;
+}
+
+.container {
+    padding: 0 2%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+}
+
+nav .left {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 35%;
+}
+
+.phone-icon {
+    color: #125C50;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #125C50;
+}
+
+.current-page {
+    /* font-weight: bold; */
+    position: relative;
+}
+
+.current-page::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background-color: #125C50;
+}
+
+.bg-green {
+    background-color: #125C50;
+    color: #fff;
+}
+
+.bg-green.diesel-price {
+    height: 10vh;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 82vh;
+    background: url('../images/bg.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 92, 80, .4);
+    border-top: 1px solid #f1f1f1;
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 2;
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-weight: 200;
+    line-height: 2;
+}
+
+.hero-content a {
+    background-color: #125C50;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+#main {
+    border-top: 1px solid rgba(168, 168, 168, .5);
+    padding: 40px 3%;
+}
+
+.index-main {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.index-main a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.index-main p a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    height: 3px;
+    background-color: #0D264E;
+}
+
+footer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* ORDER PAGE */
+.order-form {
+    margin-top: 3%;
+}
+
+.order-form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    color: #125C50;
+}
+
+.order-form p span {
+    width: 15%;
+}
+
+.order-form p span > span {
+    font-size: .8rem;
+    color: black;
+}
+
+.order-form select, .order-form input, .order-form textarea {
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bebebe;
+    outline: none;
+}
+
+.order-form textarea {
+    resize: vertical;
+}
+
+.order-form input[type=submit] {
+    margin: 0 auto;
+    background-color: #125C50;
+    width: 65%;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.order-form .button-span {
+    width: 35%;
+}
+
+/* ABOUT PAGE */
+.green-text {
+    color: #125C50;
+    font-weight: bold;
+}
+
+.about-main, .mission-main {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.about-footer, .mission-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-main > p, .board, .mission-main div, .contact-main div {
+    margin-top: 2%;
+}
+
+/* CONTACT PAGE */
+.contact-main address {
+    font-style: normal;
+    margin-top: 1.2%;
+}
+
+.contact-form {
+    margin-top: 1.2%;
+    background-color: #a8a8a8;
+    padding: 4% 2%;
+}
+
+.contact-form p {
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2%;
+    /* align-items: center; */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.contact-form input {
+    height: 35px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type=submit] {
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
